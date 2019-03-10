@@ -1,0 +1,16 @@
+@mixin fb ($display:flex,$direction:column,$content:center)  
+{
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+    
+}
+
+@mixin image ($largeur:150px,$hauteur:100px)
+{
+    width: $largeur;
+    height:$hauteur;
+}
+
+
+

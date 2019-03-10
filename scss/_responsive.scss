@@ -1,0 +1,22 @@
+@media screen and (max-width: 800px){
+
+    header{
+        height:150px;
+        max-width: $taille;
+
+     #voyage {
+        font-size:5 0px;
+            }
+        }
+        
+        .container {
+            @include fb($direction:column);
+            max-width: $taille;
+            margin: auto;
+
+            
+            }
+        
+
+          
+}

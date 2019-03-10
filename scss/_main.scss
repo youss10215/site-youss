@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $police;
+    background-color: $couleur_de_fond;
+   
+   
+    
+}
+
+/*Header*/
+
+header {
+    @include fb();
+
+    background-image: url("../photo/nz.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 350px;
+    align-items: center;
+    #voyage {
+        font-size:50px;
+        color:$couleur;
+        -webkit-text-stroke: 4px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+
+/* Container*/
+
+.container {
+    @include fb($direction:row);
+    
+    max-width: $taille;
+    margin: auto;
+}
+
+aside {
+    @include fb($content:flex-start);
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+
+    
+    
+    
+    
+  
+    .widget1 {
+        width: 100%;
+        text-align: center;
+        .recherche{
+            border: solid 1px  #CACACA;
+            margin-bottom: 10px;
+        }
+        .chrech {
+            width: 90%;
+            
+        }
+        
+    }
+    
+    .widget2 {
+        @include fb();
+        
+        margin-top: 50px;
+
+        .a_la_une {
+            width: 100%;
+            text-align: center;
+            border: solid 1px  #CACACA;
+            margin-bottom: 30px;
+           
+        }
+       
+        
+        .titre1 {
+            text-align: center;
+            margin-bottom: 20px;
+            border: solid 1px  #CACACA;
+            
+        }
+
+        .titre2 {
+            text-align: center;
+            margin:20px 0 10px;
+            border: solid 1px  #CACACA;
+        }
+
+    }   
+
+        .widget3 {
+        @include fb();
+        margin-top: 100px;
+            
+       
+        
+        }
+
+     
+}
+
+article {
+    margin: 30px;
+    width: 70%;
+ 
+    
+    
+
+    .titre_article {
+        font-size: 30px;
+        
+    }
+
+    .imgage_article {
+        float: left;
+        margin-right: 10px;
+    }
+
+    
+}
+
+/*Footer*/
+
+footer {
+    @include fb();
+    align-items: center;
+}
+
+
+
+
+
+
+  
+
+        
+        
+    
+
+
